@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - УГКТиД Маркет</title>
+    <meta name="description" content="Информация о проекте, ответы на вопросы и форма обратной связи.">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <img src="media/671904436867de57a6888f1b260690fd30fdf02a.png" alt="Логотип УГКТиД" class="logo-img"> 
+                <a class="logo-text" href="index.html">УГКТиД Маркет</a>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="index.html#workshops" class="nav__link">Мастерские</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link active">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-hero section-padding">
+            <div class="container">
+                <h1 class="page-title">О нашем проекте</h1>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p><strong>УГКТиД Маркет</strong> — это уникальная площадка, созданная для продажи товаров, изготовленных талантливыми студентами и преподавателями нашего колледжа.</p>
+                        <p>Наша главная цель — привлечь внимание к уникальным изделиям ручной работы и предоставить удобный сервис для их приобретения.</p>
+                        
+                        <h3>Для кого мы работаем?</h3>
+                        <p>Наша аудитория — это люди, ценящие эксклюзивность и качество. Мы рады предложить необычные подарки частным покупателям и оптовые партии сувениров для представителей малого и среднего бизнеса.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://placehold.co/500x350/f0f0f0/333?text=Творческий+процесс" alt="Студенты за работой">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Часто задаваемые вопросы</h2>
+                <div class="faq-wrapper">
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">Как долго изготавливается товар?</button>
+                        <div class="faq-answer">
+                            <p>Сроки зависят от сложности изделия и загруженности мастерской. Обычно это занимает от 3 до 7 рабочих дней. Точную информацию вам сообщит менеджер при подтверждении заказа.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Можно ли сделать индивидуальный заказ?</button>
+                        <div class="faq-answer">
+                            <p>Да! Многие наши мастерские принимают заказы по вашим эскизам или пожеланиям. Укажите это в форме обратной связи или при оформлении заказа.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Есть ли скидки на оптовые закупки?</button>
+                        <div class="faq-answer">
+                            <p>Мы открыты к сотрудничеству с бизнесом. Для оптовых покупателей действуют специальные условия, которые обсуждаются индивидуально.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Где забирать товар?</button>
+                        <div class="faq-answer">
+                            <p>Пункт самовывоза находится в главном корпусе УГКТиД. Также возможна доставка курьерской службой по тарифам оператора.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Связаться с нами</h2>
+                <p class="section-desc">Есть вопросы или предложения? Напишите нам!</p>
+                
+                <div class="feedback-iframe-wrapper">
+                    <iframe src="https://forms.yandex.ru/u/YOUR_FEEDBACK_FORM_ID/?iframe=1" frameborder="0" name="ya-form-feedback"></iframe>
+                    
+                    <div class="iframe-placeholder">
+                        <p>Место для Яндекс.Формы обратной связи</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="privacy-section">
+            <div class="container">
+                <div class="privacy-toggler">
+                    <h3>Политика обработки персональных данных</h3>
+                    <button id="togglePrivacy" class="btn-text">Показать текст</button>
+                </div>
+                <div class="privacy-content" id="privacyText">
+                    <p>Настоящая Политика конфиденциальности персональных данных действует в отношении всей информации, которую сайт «УГКТиД Маркет» может получить о Пользователе во время использования сайта.</p>
+                    <p>1. Мы собираем персональные данные (ФИО, телефон, email) исключительно для обработки и доставки заказов.</p>
+                    <p>2. Мы обязуемся не передавать полученную информацию третьим лицам, за исключением случаев, предусмотренных законодательством РФ.</p>
+                    <p>3. Оставляя заявку на сайте, вы даете согласие на обработку ваших персональных данных.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__info">
+                <p>&copy; 2025 УГКТиД Маркет. Все права защищены.</p>
+            </div>
+            <div class="footer__links">
+                <a href="#privacyText" onclick="document.getElementById('privacyText').style.display='block'">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/about.js"></script>
+</body>
+</html>

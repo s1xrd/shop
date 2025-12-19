@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа - УГКТиД Маркет</title>
+    <meta name="description" content="Оформление заказа и информация о доставке">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/order.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit;">
+                    <img src="media/671904436867de57a6888f1b260690fd30fdf02a.png" alt="Логотип УГКТиД" class="logo-img"> 
+                    <a class="logo-text" href="index.html">УГКТиД Маркет</a>
+                </a>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="index.html#workshops" class="nav__link">Мастерские</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Оформление заказа</h1>
+                <p class="page-subtitle">Заполните форму, чтобы приобрести изделия студентов</p>
+            </div>
+        </section>
+
+        <section class="order-section">
+            <div class="container order-grid">
+                
+                <div class="order-info">
+                    <div class="info-card">
+                        <h3 class="info-card__title">Как купить?</h3>
+                        <ol class="steps-list">
+                            <li>Перейдите в каталог мастерской на Яндекс.Диске.</li>
+                            <li>Выберите понравившееся изделие.</li>
+                            <li>Заполните форму справа, указав название товара.</li>
+                            <li>Ожидайте звонка для подтверждения.</li>
+                        </ol>
+                    </div>
+
+                    <div class="info-card">
+                        <h3 class="info-card__title">Доставка и оплата</h3>
+                        <div class="info-content">
+                            <div class="info-item">
+                                <h4>💰 Оплата</h4>
+                                <p>Оплата производится после подтверждения заказа менеджером. Доступен перевод по реквизитам или оплата при получении (для самовывоза).</p>
+                            </div>
+                            <div class="info-item">
+                                <h4>🚚 Доставка</h4>
+                                <ul class="delivery-list">
+                                    <li><strong>Самовывоз:</strong> г. Уфа, ул. Чернышевского 141 (бесплатно)</li>
+                                    <li><strong>Доставка:</strong> Курьерскими службами (по тарифам оператора)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-form">
+                    <div class="form-wrapper">
+                        <h3 class="form-title">Форма заявки</h3>
+                        <p class="form-desc">Пожалуйста, укажите верные контактные данные.</p>
+                        
+                        <div class="iframe-box">
+                            <iframe 
+                                src="https://forms.yandex.ru/u/YOUR_FORM_ID/?iframe=1" 
+                                name="ya-form-order" 
+                                allow="payment">
+                            </iframe>
+                            
+                            <div class="iframe-placeholder">
+                                <p>Здесь загружается форма заказа...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__info">
+                <p>&copy; 2025 УГКТиД Маркет. Все права защищены.</p>
+            </div>
+            <div class="footer__links">
+                <a href="#privacyText" onclick="document.getElementById('privacyText').style.display='block'">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/order.js"></script>
+</body>
+</html>
