@@ -98,7 +98,7 @@ ul {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../media/hero.jpg'));
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../media/hero.jpg');
     background-size: cover;
     background-position: center;
     color: var(--white);
@@ -363,6 +363,7 @@ ul {
         flex-direction: column;
     }
 }
+
 
 
 
