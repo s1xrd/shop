@@ -257,7 +257,7 @@ ul {
     border-radius: var(--border-radius);
     font-weight: bold;
     color: #555;
-    width: 100px;
+    width: 160px;
     height: auto;
 }
 
@@ -365,6 +365,7 @@ ul {
         flex-direction: column;
     }
 }
+
 
 
 
