@@ -253,7 +253,7 @@ ul {
 
 .partner-logo {
     background: #e0e0e0;
-    padding: 20px;
+    padding: 10px;
     border-radius: var(--border-radius);
     font-weight: bold;
     color: #555;
@@ -365,6 +365,7 @@ ul {
         flex-direction: column;
     }
 }
+
 
 
 
