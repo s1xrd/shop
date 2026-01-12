@@ -365,12 +365,15 @@ ul {
         flex-direction: column;
     }
     .partner-logo {
-        width: 50px;
+        width: 120px;
+        flex-direction: column;
+    }
+
+    .socials__qr {
+        flex-direction: column;
     }
 }
-.socials__qr {
-flex-direction: column;
-}
+
 
 
 
