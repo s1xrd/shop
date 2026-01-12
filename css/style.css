@@ -258,7 +258,7 @@ ul {
     font-weight: bold;
     color: #555;
     max-width: 100%;
-    height: auto;
+    height: 20px;
 }
 
 .socials__qr {
@@ -365,6 +365,7 @@ ul {
         flex-direction: column;
     }
 }
+
 
 
 
