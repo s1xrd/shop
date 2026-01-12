@@ -366,6 +366,7 @@ ul {
     }
     .partner-logo {
         width: 120px;
+        align-items: center; 
 
     }
 
@@ -376,6 +377,7 @@ ul {
         flex-direction: column;
 }
 }
+
 
 
 
