@@ -252,20 +252,6 @@ html[data-theme="light"] .card {
   color: var(--text-secondary);
 }
 
-.privacy-content {
-    display: none; /* Скрыто по умолчанию */
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    color: #ffffff;
-}
-
-.privacy-section {
-    background-color: #cf7916;
-    color: #ececec;
-    padding: 20px 0;
-    font-size: 0.9rem;
-}
 
 /* Responsive tweaks */
 
