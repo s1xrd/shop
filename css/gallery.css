@@ -38,22 +38,7 @@ body {
 
 /* Layout */
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 5vw;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
-  backdrop-filter: blur(16px);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: linear-gradient(to bottom,
-    rgba(15, 23, 42, 0.75),
-    rgba(15, 23, 42, 0.4),
-    transparent
-  );
-}
+
 
 html[data-theme="light"] .header {
   background: linear-gradient(to bottom,

@@ -5,19 +5,31 @@
   <title>Галерея продукции | UGKTID</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
-    <a href="media/671904436867de57a6888f1b260690fd30fdf02a.png" class="logo">UGKTID</a>
+<header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <img src="media/671904436867de57a6888f1b260690fd30fdf02a.png" alt="Логотип УГКТиД" class="logo-img"> 
+                <a class="logo-text" href="index.html">УГКТиД Маркет</a>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link active">Главная</a></li>
+                    <li class="nav__item"><a href="#workshops" class="nav__link">Мастерские</a></li>
+                    <li class="nav__item"><a href="gallery.html" class="nav__link">Галлерея</a></li>
+                    <li class="nav__item"><a href="order.html" class="nav__link">Заказ</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </div>
+    </header>
 
-    <div class="theme-toggle">
-      <span class="theme-label">Тема</span>
-      <button id="themeSwitcher" class="theme-switcher" aria-label="Переключить тему">
-        <span class="theme-icon theme-icon--light">☀</span>
-        <span class="theme-icon theme-icon--dark">🌙</span>
-      </button>
-    </div>
-  </header>
 
   <main class="main">
     <h1 class="title">Галерея продукции</h1>
@@ -73,4 +85,6 @@
 
   <script src="js/gallery.js"></script>
 </body>
+    <script src="js/gallery.js"></script>
+    <script src="js/about.js"></script>
 </html>
