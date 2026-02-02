@@ -31,6 +31,10 @@
                 <span></span>
             </div>
         </div>
+    <label class="theme-toggle">
+        <input type="checkbox" id="theme-switch">
+        <span class="theme-slider"></span>
+    </label>
     </header>
 
 
@@ -110,5 +114,44 @@
     <script src="js/main.js"></script>
     <script src="js/gallery.js"></script>
     <script src="js/about.js"></script>
+    <script>
+  (function () {
+    const body = document.body;
+    const switchInput = document.getElementById('theme-switch');
+    const THEME_KEY = 'site-theme';
+
+    // Считываем сохраненную тему
+    const savedTheme = localStorage.getItem(THEME_KEY);
+
+    if (savedTheme === 'dark') {
+      body.classList.add('dark-theme');
+      if (switchInput) switchInput.checked = true;
+    } else if (savedTheme === 'light') {
+      body.classList.remove('dark-theme');
+      if (switchInput) switchInput.checked = false;
+    } else {
+      // Если ничего не сохранено — можем ориентироваться на системную тему
+      const prefersDark = window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+      if (prefersDark) {
+        body.classList.add('dark-theme');
+        if (switchInput) switchInput.checked = true;
+      }
+    }
+
+    if (switchInput) {
+      switchInput.addEventListener('change', function () {
+        if (this.checked) {
+          body.classList.add('dark-theme');
+          localStorage.setItem(THEME_KEY, 'dark');
+        } else {
+          body.classList.remove('dark-theme');
+          localStorage.setItem(THEME_KEY, 'light');
+        }
+      });
+    }
+  })();
+</script>
 </body>
 </html>
