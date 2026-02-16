@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Оформление заказа - УГКТиД Маркет</title>
-    <meta name="description" content="Оформление заказа и информация о доставке">
+    <title>О нас - УГКТиД Маркет</title>
+    <meta name="description" content="Информация о проекте, ответы на вопросы и форма обратной связи.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,8 +26,8 @@
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
                     <li class="nav__item"><a href="gallery.html" class="nav__link">Галерея</a></li>
-                    <li class="nav__item"><a href="order.html" class="nav__link active">Заказ</a></li>
-                    <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="order.html" class="nav__link">Заказ</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link active">О нас</a></li>
                 </ul>
             </nav>
             <button class="header__burger" id="burger" aria-label="Открыть меню">
@@ -41,66 +41,128 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <h1 class="page-title animate-fade-up">Оформление заказа</h1>
-                <p class="page-subtitle animate-fade-up animate-delay-1">Заполните форму, чтобы приобрести изделия студентов</p>
+                <h1 class="page-title animate-fade-up">О нашем проекте</h1>
+                <p class="page-subtitle animate-fade-up animate-delay-1">Узнайте больше о нас и нашей миссии</p>
             </div>
         </section>
 
-        <section class="order-section section-padding">
-            <div class="container order-grid">
-                <div class="order-info">
-                    <div class="info-card reveal">
-                        <div class="info-card__icon">📋</div>
-                        <h3 class="info-card__title">Как купить?</h3>
-                        <ol class="steps-list">
-                            <li>Перейдите в каталог мастерской на Яндекс.Диске.</li>
-                            <li>Выберите понравившееся изделие.</li>
-                            <li>Заполните форму, указав название товара.</li>
-                            <li>Ожидайте звонка для подтверждения.</li>
-                        </ol>
+        <section class="about-hero section-padding">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text reveal">
+                        <p><strong>УГКТиД Маркет</strong> — это уникальная площадка, созданная для продажи товаров, изготовленных талантливыми студентами и преподавателями нашего колледжа.</p>
+                        <p>Наша главная цель — привлечь внимание к уникальным изделиям ручной работы и предоставить удобный сервис для их приобретения.</p>
+                        <h3>Для кого мы работаем?</h3>
+                        <p>Наша аудитория — это люди, ценящие эксклюзивность и качество. Мы рады предложить необычные подарки частным покупателям и оптовые партии сувениров для представителей малого и среднего бизнеса.</p>
                     </div>
-
-                    <div class="info-card reveal">
-                        <div class="info-card__icon">🚀</div>
-                        <h3 class="info-card__title">Доставка и оплата</h3>
-                        <div class="info-content">
-                            <div class="info-item">
-                                <h4>💰 Оплата</h4>
-                                <p>Оплата производится после подтверждения заказа менеджером. Доступен перевод по реквизитам или оплата при получении (для самовывоза).</p>
-                            </div>
-                            <div class="info-item">
-                                <h4>🚚 Доставка</h4>
-                                <ul class="delivery-list">
-                                    <li><strong>Самовывоз:</strong> г. Уфа, ул. Чернышевского 141 (бесплатно)</li>
-                                    <li><strong>Доставка:</strong> Курьерскими службами (по тарифам оператора)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="order-form reveal">
-                    <div class="form-wrapper">
-                        <h3 class="form-title">Форма заявки</h3>
-                        <p class="form-desc">Пожалуйста, укажите верные контактные данные.</p>
-                        <div class="iframe-box">
-                            <iframe
-                                src="https://forms.yandex.ru/u/6964d19184227cd487c84bd4"
-                                name="ya-form-order"
-                                allow="payment"
-                                loading="lazy">
-                            </iframe>
-                            <div class="iframe-placeholder">
-                                <div class="iframe-placeholder__spinner"></div>
-                                <p>Загрузка формы заказа...</p>
-                            </div>
-                        </div>
+                    <div class="about-image reveal">
+                        <img src="media/work.jpg" alt="Студенты за работой">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="privacy-section">
+        <section class="stats-section section-padding">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item reveal">
+                        <span class="stat-number" data-target="9">0</span>
+                        <span class="stat-label">Мастерских</span>
+                    </div>
+                    <div class="stat-item reveal">
+                        <span class="stat-number" data-target="50">0</span>
+                        <span class="stat-label">Товаров</span>
+                    </div>
+                    <div class="stat-item reveal">
+                        <span class="stat-number" data-target="200">0</span>
+                        <span class="stat-label">Довольных клиентов</span>
+                    </div>
+                    <div class="stat-item reveal">
+                        <span class="stat-number" data-target="15">0</span>
+                        <span class="stat-label">Преподавателей</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section section-padding">
+            <div class="container">
+                <h2 class="section-title reveal">Мы на карте</h2>
+                <p class="section-desc reveal">Наш колледж находится по адресу: г. Уфа, ул. Чернышевского, 141</p>
+                <div class="map-wrapper reveal">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Abcfdec26e027b43d04f2ca4f0558af099665671fd64d42026a6bf5ffe78c6838&amp;source=constructor"
+                        width="100%"
+                        height="450"
+                        frameborder="0"
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section section-padding">
+            <div class="container">
+                <h2 class="section-title reveal">Часто задаваемые вопросы</h2>
+                <div class="faq-wrapper">
+                    <div class="faq-item reveal">
+                        <button class="faq-question">
+                            <span>Как долго изготавливается товар?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Сроки зависят от сложности изделия и загруженности мастерской. Обычно это занимает от 3 до 7 рабочих дней. Точную информацию вам сообщит менеджер при подтверждении заказа.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question">
+                            <span>Можно ли сделать индивидуальный заказ?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Да! Многие наши мастерские принимают заказы по вашим эскизам или пожеланиям. Укажите это в форме обратной связи или при оформлении заказа.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question">
+                            <span>Есть ли скидки на оптовые закупки?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Мы открыты к сотрудничеству с бизнесом. Для оптовых покупателей действуют специальные условия, которые обсуждаются индивидуально.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question">
+                            <span>Где забирать товар?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Пункт самовывоза находится в главном корпусе УГКТиД. Также возможна доставка курьерской службой по тарифам оператора.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback-section section-padding">
+            <div class="container">
+                <h2 class="section-title reveal">Связаться с нами</h2>
+                <p class="section-desc reveal">Есть вопросы или предложения? Напишите нам!</p>
+                <div class="feedback-iframe-wrapper reveal">
+                    <iframe src="https://forms.yandex.ru/u/6964d108eb614622184f0c45" frameborder="0" name="ya-form-feedback" loading="lazy"></iframe>
+                    <div class="iframe-placeholder">
+                        <div class="iframe-placeholder__spinner"></div>
+                        <p>Загрузка формы обратной связи...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="privacy-section" id="privacySection">
             <div class="container">
                 <div class="privacy-toggler">
                     <h3>Политика обработки персональных данных</h3>
@@ -136,4 +198,4 @@
 
     <script src="js/main.js"></script>
 </body>
-</html>ы
+</html>
