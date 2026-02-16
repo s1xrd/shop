@@ -1,159 +1,88 @@
 <!DOCTYPE html>
-<html lang="ru" data-theme="light">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <title>Галерея продукции | УГКТиД</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="css/gallery.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея продукции | УГКТиД Маркет</title>
+    <meta name="description" content="Галерея товаров и продукции студентов УГКТиД">
     <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/about.css">
-
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="header">
+
+    <div class="preloader" id="preloader">
+        <div class="preloader__spinner"></div>
+    </div>
+
+    <header class="header" id="header">
         <div class="container header__container">
-            <div class="header__logo">
-                <img src="media/671904436867de57a6888f1b260690fd30fdf02a.png" alt="Логотип УГКТиД" class="logo-img"> 
-                <a class="logo-text" href="index.html">УГКТиД Маркет</a>
-            </div>
-            <nav class="header__nav">
+            <a href="index.html" class="header__logo">
+                <img src="media/671904436867de57a6888f1b260690fd30fdf02a.png" alt="Логотип УГКТиД" class="logo-img">
+                <span class="logo-text">УГКТиД Маркет</span>
+            </a>
+            <nav class="header__nav" id="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
                     <li class="nav__item"><a href="gallery.html" class="nav__link active">Галерея</a></li>
                     <li class="nav__item"><a href="order.html" class="nav__link">Заказ</a></li>
                     <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
-                    
                 </ul>
             </nav>
-            <div class="header__burger">
+            <button class="header__burger" id="burger" aria-label="Открыть меню">
                 <span></span>
-            </div>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
-
-  <main class="main">
-    <h1 class="title">Галерея продукции</h1>
-    <p class="subtitle">
-      Подборка продукции с кратким описанием.
-    </p>
-
-    <section class="gallery">
-      <!-- Карточка товара -->
-      <article class="card">
-        <div class="card-image">
-          <img src="media/fancy.jpg" alt="Название товара 1" />
-        </div>
-        <div class="card-body">
-          <h2 class="card-title">Название товара 1</h2>
-          <p class="card-desc">
-            Краткое описание товара 1: основные характеристики и преимущества.
-          </p>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-image">
-          <img src="media/fancy.jpg" alt="Название товара 2" />
-        </div>
-        <div class="card-body">
-          <h2 class="card-title">Название товара 2</h2>
-          <p class="card-desc">
-            Краткое описание товара 2: для какого использования подходит.
-          </p>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-image">
-          <img src="media/fancy.jpg" alt="Название товара 3" />
-        </div>
-        <div class="card-body">
-          <h2 class="card-title">Название товара 4</h2>
-          <p class="card-desc">
-            Краткое описание товара 4: ключевые особенности и преимущества.
-          </p>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-image">
-          <img src="media/fancy.jpg" alt="Название товара 3" />
-        </div>
-        <div class="card-body">
-          <h2 class="card-title">Название товара 5</h2>
-          <p class="card-desc">
-            Краткое описание товара 5: ключевые особенности и преимущества.
-          </p>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-image">
-          <img src="media/fancy.jpg" alt="Название товара 3" />
-        </div>
-        <div class="card-body">
-          <h2 class="card-title">Название товара 6</h2>
-          <p class="card-desc">
-            Краткое описание товара 6: ключевые особенности и преимущества.
-          </p>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-image">
-          <img src="media/fancy.jpg" alt="Название товара 3" />
-        </div>
-        <div class="card-body">
-          <h2 class="card-title">Название товара 7</h2>
-          <p class="card-desc">
-            Краткое описание товара 7: ключевые особенности и преимущества.
-          </p>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-image">
-          <img src="media/fancy.jpg" alt="Название товара 3" />
-        </div>
-        <div class="card-body">
-          <h2 class="card-title">Название товара 8</h2>
-          <p class="card-desc">
-            Краткое описание товара 8: ключевые особенности и преимущества.
-          </p>
-        </div>
-      </article>
-
-      <!-- добавляйте карточки по мере необходимости -->
-    </section>
-  </main>
-    <section class="privacy-section">
+    <main>
+        <section class="page-header">
             <div class="container">
-                <div class="privacy-toggler">
-                    <h3>Политика обработки персональных данных</h3>
-                    <button id="togglePrivacy" class="btn-text">Показать текст</button>
-                </div>
-                <div class="privacy-content" id="privacyText">
-                    <p>Настоящая Политика конфиденциальности персональных данных действует в отношении всей информации, которую сайт «УГКТиД Маркет» может получить о Пользователе во время использования сайта.</p>
-                    <p>1. Мы собираем персональные данные (ФИО, телефон, email) исключительно для обработки и доставки заказов.</p>
-                    <p>2. Мы обязуемся не передавать полученную информацию третьим лицам, за исключением случаев, предусмотренных законодательством РФ.</p>
-                    <p>3. Оставляя заявку на сайте, вы даете согласие на обработку ваших персональных данных.</p>
-                </div>
+                <h1 class="page-title animate-fade-up">Галерея продукции</h1>
+                <p class="page-subtitle animate-fade-up animate-delay-1">Подборка продукции с кратким описанием</p>
             </div>
         </section>
-    <footer class="footer">
-        <div class="container footer__container">
-            <div class="footer__info">
-                <p>&copy; 2026 УГКТиД Маркет. Все права защищены.</p>
-            </div>
-            <div class="footer__links">
-                <a href="#">Политика конфиденциальности</a>
-                <a href="#">Публичная оферта</a>
-            </div>
-        </div>
-    </footer>
 
-    <script src="js/main.js"></script>
-    <script src="js/gallery.js"></script>
-    <script src="js/about.js"></script>
-    
-</body>
-</html>
+        <section class="gallery-section section-padding">
+            <div class="container">
+                <div class="gallery-grid">
+                    <article class="gallery-card reveal">
+                        <div class="gallery-card__image">
+                            <img src="media/fancy.jpg" alt="Название товара 1" loading="lazy">
+                            <div class="gallery-card__overlay">
+                                <span>Подробнее</span>
+                            </div>
+                        </div>
+                        <div class="gallery-card__body">
+                            <h2 class="gallery-card__title">Название товара 1</h2>
+                            <p class="gallery-card__desc">Краткое описание товара 1: основные характеристики и преимущества.</p>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card reveal">
+                        <div class="gallery-card__image">
+                            <img src="media/fancy.jpg" alt="Название товара 2" loading="lazy">
+                            <div class="gallery-card__overlay">
+                                <span>Подробнее</span>
+                            </div>
+                        </div>
+                        <div class="gallery-card__body">
+                            <h2 class="gallery-card__title">Название товара 2</h2>
+                            <p class="gallery-card__desc">Краткое описание товара 2: для какого использования подходит.</p>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card reveal">
+                        <div class="gallery-card__image">
+                            <img src="media/fancy.jpg" alt="Название товара 3" loading="lazy">
+                            <div class="gallery-card__overlay">
+                                <span>Подробнее</span>
+                            </div>
+                        </div>
+                        <div class="gallery-card__body">
+                            <h2 class="gallery-card__title">Название товара 3</h2>
+                            <p class="gallery-card__desc">Краткое описание товара 3: ключевые особенности.</p>
+                        

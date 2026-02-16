@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О нас - УГКТиД Маркет</title>
     <meta name="description" content="Информация о проекте, ответы на вопросы и форма обратной связи.">
-    
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/about.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="header">
+    <div class="preloader" id="preloader">
+        <div class="preloader__spinner"></div>
+    </div>
+
+    <header class="header" id="header">
         <div class="container header__container">
-            <div class="header__logo">
-                <img src="media/671904436867de57a6888f1b260690fd30fdf02a.png" alt="Логотип УГКТиД" class="logo-img"> 
-                <a class="logo-text" href="index.html">УГКТиД Маркет</a>
-            </div>
-            <nav class="header__nav">
+            <a href="index.html" class="header__logo">
+                <img src="media/671904436867de57a6888f1b260690fd30fdf02a.png" alt="Логотип УГКТиД" class="logo-img">
+                <span class="logo-text">УГКТиД Маркет</span>
+            </a>
+            <nav class="header__nav" id="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
                     <li class="nav__item"><a href="gallery.html" class="nav__link">Галерея</a></li>
@@ -29,142 +30,125 @@
                     <li class="nav__item"><a href="about.html" class="nav__link active">О нас</a></li>
                 </ul>
             </nav>
-            <div class="header__burger">
+            <button class="header__burger" id="burger" aria-label="Открыть меню">
                 <span></span>
-            </div>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
     <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title animate-fade-up">О нашем проекте</h1>
+                <p class="page-subtitle animate-fade-up animate-delay-1">Узнайте больше о нас и нашей миссии</p>
+            </div>
+        </section>
+
         <section class="about-hero section-padding">
             <div class="container">
-                <h1 class="page-title">О нашем проекте</h1>
                 <div class="about-content">
-                    <div class="about-text">
+                    <div class="about-text reveal">
                         <p><strong>УГКТиД Маркет</strong> — это уникальная площадка, созданная для продажи товаров, изготовленных талантливыми студентами и преподавателями нашего колледжа.</p>
                         <p>Наша главная цель — привлечь внимание к уникальным изделиям ручной работы и предоставить удобный сервис для их приобретения.</p>
-                        
                         <h3>Для кого мы работаем?</h3>
                         <p>Наша аудитория — это люди, ценящие эксклюзивность и качество. Мы рады предложить необычные подарки частным покупателям и оптовые партии сувениров для представителей малого и среднего бизнеса.</p>
                     </div>
-                    <div class="about-image">
+                    <div class="about-image reveal">
                         <img src="media/work.jpg" alt="Студенты за работой">
                     </div>
                 </div>
             </div>
         </section>
-<section class="map-section section-padding">
+
+        <section class="stats-section section-padding">
             <div class="container">
-                <h2 class="section-title">Мы на карте</h2>
-                <p class="section-desc">Наш колледж находится по адресу: г. Уфа, ул. Чернышевского, 141</p>
-                
-                <div class="map-wrapper reveal-on-scroll">
-                    <iframe 
-                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Abcfdec26e027b43d04f2ca4f0558af099665671fd64d42026a6bf5ffe78c6838&amp;source=constructor" 
-                        width="100%" 
-                        height="450" 
-                        frameborder="0">
+                <div class="stats-grid">
+                    <div class="stat-item reveal">
+                        <span class="stat-number" data-target="9">0</span>
+                        <span class="stat-label">Мастерских</span>
+                    </div>
+                    <div class="stat-item reveal">
+                        <span class="stat-number" data-target="50">0</span>
+                        <span class="stat-label">Товаров</span>
+                    </div>
+                    <div class="stat-item reveal">
+                        <span class="stat-number" data-target="200">0</span>
+                        <span class="stat-label">Довольных клиентов</span>
+                    </div>
+                    <div class="stat-item reveal">
+                        <span class="stat-number" data-target="15">0</span>
+                        <span class="stat-label">Преподавателей</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section section-padding">
+            <div class="container">
+                <h2 class="section-title reveal">Мы на карте</h2>
+                <p class="section-desc reveal">Наш колледж находится по адресу: г. Уфа, ул. Чернышевского, 141</p>
+                <div class="map-wrapper reveal">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Abcfdec26e027b43d04f2ca4f0558af099665671fd64d42026a6bf5ffe78c6838&amp;source=constructor"
+                        width="100%"
+                        height="450"
+                        frameborder="0"
+                        loading="lazy">
                     </iframe>
                 </div>
             </div>
         </section>
 
-
-
-
-        
-
-        <section class="feedback-section section-padding">
+        <section class="faq-section section-padding">
             <div class="container">
-                <h2 class="section-title">Связаться с нами</h2>
-                <p class="section-desc">Есть вопросы или предложения? Напишите нам!</p>
-                
-                <div class="feedback-iframe-wrapper">
-                    <iframe src="https://forms.yandex.ru/u/6964d108eb614622184f0c45" frameborder="0" name="ya-form-feedback"></iframe>
-                    
-                    <div class="iframe-placeholder">
-                        <p>Место для Яндекс.Формы обратной связи</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-                <section class="faq-section section-padding">
-            <div class="container">
-                <h2 class="section-title">Часто задаваемые вопросы</h2>
+                <h2 class="section-title reveal">Часто задаваемые вопросы</h2>
                 <div class="faq-wrapper">
-                    
-                    <div class="faq-item">
-                        <button class="faq-question">Как долго изготавливается товар?</button>
+                    <div class="faq-item reveal">
+                        <button class="faq-question">
+                            <span>Как долго изготавливается товар?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
                         <div class="faq-answer">
                             <p>Сроки зависят от сложности изделия и загруженности мастерской. Обычно это занимает от 3 до 7 рабочих дней. Точную информацию вам сообщит менеджер при подтверждении заказа.</p>
                         </div>
                     </div>
 
-                    <div class="faq-item">
-                        <button class="faq-question">Можно ли сделать индивидуальный заказ?</button>
+                    <div class="faq-item reveal">
+                        <button class="faq-question">
+                            <span>Можно ли сделать индивидуальный заказ?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
                         <div class="faq-answer">
                             <p>Да! Многие наши мастерские принимают заказы по вашим эскизам или пожеланиям. Укажите это в форме обратной связи или при оформлении заказа.</p>
                         </div>
                     </div>
 
-                    <div class="faq-item">
-                        <button class="faq-question">Есть ли скидки на оптовые закупки?</button>
+                    <div class="faq-item reveal">
+                        <button class="faq-question">
+                            <span>Есть ли скидки на оптовые закупки?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
                         <div class="faq-answer">
                             <p>Мы открыты к сотрудничеству с бизнесом. Для оптовых покупателей действуют специальные условия, которые обсуждаются индивидуально.</p>
                         </div>
                     </div>
 
-                    <div class="faq-item">
-                        <button class="faq-question">Где забирать товар?</button>
+                    <div class="faq-item reveal">
+                        <button class="faq-question">
+                            <span>Где забирать товар?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
                         <div class="faq-answer">
                             <p>Пункт самовывоза находится в главном корпусе УГКТиД. Также возможна доставка курьерской службой по тарифам оператора.</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
 
-        <section class="privacy-section">
+        <section class="feedback-section section-padding">
             <div class="container">
-                <div class="privacy-toggler">
-                    <h3>Политика обработки персональных данных</h3>
-                    <button id="togglePrivacy" class="btn-text">Показать текст</button>
-                </div>
-                <div class="privacy-content" id="privacyText">
-                    <p>Настоящая Политика конфиденциальности персональных данных действует в отношении всей информации, которую сайт «УГКТиД Маркет» может получить о Пользователе во время использования сайта.</p>
-                    <p>1. Мы собираем персональные данные (ФИО, телефон, email) исключительно для обработки и доставки заказов.</p>
-                    <p>2. Мы обязуемся не передавать полученную информацию третьим лицам, за исключением случаев, предусмотренных законодательством РФ.</p>
-                    <p>3. Оставляя заявку на сайте, вы даете согласие на обработку ваших персональных данных.</p>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <div class="container footer__container">
-            <div class="footer__info">
-                <p>&copy; 2026 УГКТиД Маркет. Все права защищены.</p>
-            </div>
-            <div class="footer__links">
-                <a href="#">Политика конфиденциальности</a>
-                <a href="#">Публичная оферта</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
-    <script src="js/about.js"></script>
-</body>
-
-</html>
-
-
-
-
-
-
-
-
-
+                <h2 class="section-title reveal">Связаться с нами</h2>
+                <p class="section-desc reveal">Есть вопросы или предложения? Напишите 

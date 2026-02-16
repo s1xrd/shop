@@ -8,196 +8,215 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="header">
+    <!-- Прелоадер -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__spinner"></div>
+    </div>
+
+    <header class="header" id="header">
         <div class="container header__container">
-            <div class="header__logo">
-                <img src="media/671904436867de57a6888f1b260690fd30fdf02a.png" alt="Логотип УГКТиД" class="logo-img"> 
-                <a class="logo-text" href="index.html">УГКТиД Маркет</a>
-            </div>
-            <nav class="header__nav">
+            <a href="index.html" class="header__logo">
+                <img src="media/671904436867de57a6888f1b260690fd30fdf02a.png" alt="Логотип УГКТиД" class="logo-img">
+                <span class="logo-text">УГКТиД Маркет</span>
+            </a>
+            <nav class="header__nav" id="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html" class="nav__link active">Главная</a></li>
                     <li class="nav__item"><a href="#workshops" class="nav__link">Мастерские</a></li>
                     <li class="nav__item"><a href="gallery.html" class="nav__link">Галерея</a></li>
                     <li class="nav__item"><a href="order.html" class="nav__link">Заказ</a></li>
                     <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
-                    
                 </ul>
             </nav>
-            <div class="header__burger">
+            <button class="header__burger" id="burger" aria-label="Открыть меню">
                 <span></span>
-            </div>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
     <main>
         <section class="hero">
+            <div class="hero__overlay"></div>
             <div class="container hero__content">
-                <h1 class="hero__title">Уникальные изделия ручной работы</h1>
-                <p class="hero__subtitle">Площадка продажи товаров, созданных талантами студентов и преподавателей колледжа.</p>
-                <a href="#workshops" class="hero__btn">Перейти к каталогу</a>
+                <h1 class="hero__title animate-fade-up">Уникальные изделия ручной работы</h1>
+                <p class="hero__subtitle animate-fade-up animate-delay-1">Площадка продажи товаров, созданных талантами студентов и преподавателей колледжа.</p>
+                <a href="#workshops" class="hero__btn animate-fade-up animate-delay-2">Перейти к каталогу</a>
+            </div>
+            <div class="hero__scroll-indicator">
+                <span></span>
             </div>
         </section>
 
         <section id="workshops" class="workshops section-padding">
             <div class="container">
-                <h2 class="section-title">Наши мастерские</h2>
-                <p class="section-desc">Выберите категорию, чтобы ознакомиться с ассортиментом на Яндекс.Диске</p>
-                
+                <h2 class="section-title reveal">Наши мастерские</h2>
+                <p class="section-desc reveal">Выберите категорию, чтобы ознакомиться с ассортиментом на Яндекс.Диске</p>
+
                 <div class="workshops__grid">
-                    <article class="card">
+                    <article class="card reveal">
                         <div class="card__image">
-                            <img src="media/fancy.jpg" alt="Швейная мастерская">
+                            <img src="media/fancy.jpg" alt="Графический дизайн" loading="lazy">
+                            <div class="card__badge">Дизайн</div>
                         </div>
                         <div class="card__content">
                             <h3 class="card__title">Графический дизайн</h3>
-                            <p class="card__desc">Календарь, изготовление плакатов для мероприятий , изготовление открыток , инфографика для маркетплейсов</p>
+                            <p class="card__desc">Календарь, изготовление плакатов для мероприятий, изготовление открыток, инфографика для маркетплейсов</p>
                             <div class="card__contact">
-                                <strong>Контакт:</strong> Самигуллина Р.Р.
+                                <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                Самигуллина Р.Р.
                             </div>
                             <div class="card__actions">
                                 <a href="#" class="btn-outlined" target="_blank">Открыть диск</a>
-
                             </div>
                         </div>
                     </article>
 
-                    <article class="card">
+                    <article class="card reveal">
                         <div class="card__image">
-                            <img src="media/fancy.jpg" alt="Столярная мастерская">
+                            <img src="media/fancy.jpg" alt="Моушн-дизайн" loading="lazy">
+                            <div class="card__badge">Анимация</div>
                         </div>
                         <div class="card__content">
                             <h3 class="card__title">Зона Моушн-дизайн</h3>
-                            <p class="card__desc"> Курсы школы креативных индустрий Колибри</p>
+                            <p class="card__desc">Курсы школы креативных индустрий Колибри</p>
                             <div class="card__contact">
-                                <strong>Контакт:</strong> Карачурина Р.Р.
+                                <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                Карачурина Р.Р.
                             </div>
                             <div class="card__actions">
                                 <a href="#" class="btn-outlined" target="_blank">Открыть диск</a>
-                                
                             </div>
                         </div>
                     </article>
 
-                    <article class="card">
+                    <article class="card reveal">
                         <div class="card__image">
-                            <img src="media/fancy.jpg" alt="Графический дизайн">
+                            <img src="media/fancy.jpg" alt="Программирование" loading="lazy">
+                            <div class="card__badge">IT</div>
                         </div>
                         <div class="card__content">
                             <h3 class="card__title">Программирование и веб-разработка</h3>
-                            <p class="card__desc">Создание Telegram-ботов, создание веб-сайтов, администрирование серверов, настройка сетевого оборудования, создание мобильных и веб-приложений, обеспечение информационной безопасности, поддержка пользователей</p>
+                            <p class="card__desc">Создание Telegram-ботов, веб-сайтов, администрирование серверов, настройка сетевого оборудования, мобильные приложения</p>
                             <div class="card__contact">
-                                <strong>Контакт:</strong> Габитова А.И., Гарифуллин Р.Р.
+                                <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                Габитова А.И., Гарифуллин Р.Р.
                             </div>
                             <div class="card__actions">
                                 <a href="#" class="btn-outlined" target="_blank">Открыть диск</a>
-
                             </div>
                         </div>
                     </article>
 
-                     <article class="card">
+                    <article class="card reveal">
                         <div class="card__image">
-                            <img src="media/fancy.jpg" alt="Керамика">
+                            <img src="media/fancy.jpg" alt="Промышленный дизайн" loading="lazy">
+                            <div class="card__badge">3D</div>
                         </div>
                         <div class="card__content">
                             <h3 class="card__title">Промышленный дизайн</h3>
-                            <p class="card__desc">3-D печать брелоков, игрушек, сувениров, курсы по 3-D моделированию, предметный дизайн (статуэтки, игрушки, арт-объекты, предметы различные)</p>
+                            <p class="card__desc">3D-печать брелоков, игрушек, сувениров, курсы по 3D-моделированию, предметный дизайн</p>
                             <div class="card__contact">
-                                <strong>Контакт:</strong> Шагивалиева А.Р.
+                                <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                Шагивалиева А.Р.
                             </div>
                             <div class="card__actions">
                                 <a href="#" class="btn-outlined" target="_blank">Открыть диск</a>
-
                             </div>
                         </div>
                     </article>
 
-                    <article class="card">
+                    <article class="card reveal">
                         <div class="card__image">
-                            <img src="media/fancy.jpg" alt="Живопись">
+                            <img src="media/fancy.jpg" alt="Рекламная продукция" loading="lazy">
+                            <div class="card__badge">Реклама</div>
                         </div>
                         <div class="card__content">
-                            <h3 class="card__title">Разработка и создание дизайна рекламной продукции</h3>
-                            <p class="card__desc">SMM (маркетинг в соцсетях), SEO (поисковая оптимизация), разработка и распечатка рекламной продукции, создание фирменного стиля, проведение курсов</p>
+                            <h3 class="card__title">Дизайн рекламной продукции</h3>
+                            <p class="card__desc">SMM, SEO, разработка и распечатка рекламной продукции, создание фирменного стиля, проведение курсов</p>
                             <div class="card__contact">
-                                <strong>Контакт:</strong> Атнабаева К.К.
+                                <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                Атнабаева К.К.
                             </div>
                             <div class="card__actions">
                                 <a href="#" class="btn-outlined" target="_blank">Открыть диск</a>
-
                             </div>
                         </div>
                     </article>
 
-                    <article class="card">
+                    <article class="card reveal">
                         <div class="card__image">
-                            <img src="media/fancy.jpg" alt="Парикмахерское искусство">
+                            <img src="media/fancy.jpg" alt="Фотография" loading="lazy">
+                            <div class="card__badge">Фото</div>
                         </div>
                         <div class="card__content">
-                            <h3 class="card__title">Техника технологии фото</h3>
-                            <p class="card__desc">Курсы по фотографии для населения, предметная съемка, тематические фотографии для оформления интерьера</p>
+                            <h3 class="card__title">Техника и технологии фото</h3>
+                            <p class="card__desc">Курсы по фотографии для населения, предметная съёмка, тематические фотографии для оформления интерьера</p>
                             <div class="card__contact">
-                                <strong>Контакт:</strong> Ахмадеев И.В.
+                                <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                Ахмадеев И.В.
                             </div>
                             <div class="card__actions">
                                 <a href="#" class="btn-outlined" target="_blank">Открыть диск</a>
-
                             </div>
                         </div>
                     </article>
 
-                     <article class="card">
+                    <article class="card reveal">
                         <div class="card__image">
-                            <img src="media/fancy.jpg" alt="Флористика">
+                            <img src="media/fancy.jpg" alt="Видео" loading="lazy">
+                            <div class="card__badge">Видео</div>
                         </div>
                         <div class="card__content">
-                            <h3 class="card__title">Техника технологии видео</h3>
-                            <p class="card__desc">Курсы по видео монтажу, монтаж готового видео</p>
+                            <h3 class="card__title">Техника и технологии видео</h3>
+                            <p class="card__desc">Курсы по видеомонтажу, монтаж готового видео</p>
                             <div class="card__contact">
-                                <strong>Контакт:</strong> Юнусова С.Р.
+                                <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                Юнусова С.Р.
                             </div>
                             <div class="card__actions">
                                 <a href="#" class="btn-outlined" target="_blank">Открыть диск</a>
-
                             </div>
                         </div>
                     </article>
 
-                    <article class="card">
+                    <article class="card reveal">
                         <div class="card__image">
-                            <img src="media/fancy.jpg" alt="IT решения">
+                            <img src="media/fancy.jpg" alt="IT решения" loading="lazy">
+                            <div class="card__badge">Digital</div>
                         </div>
                         <div class="card__content">
                             <h3 class="card__title">IT решения</h3>
                             <p class="card__desc">Разработка сайтов, дизайн макетов и цифровые услуги.</p>
                             <div class="card__contact">
-                                <strong>Контакт:</strong> Новиков К.К.
+                                <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                Новиков К.К.
                             </div>
                             <div class="card__actions">
                                 <a href="#" class="btn-outlined" target="_blank">Открыть диск</a>
-
                             </div>
                         </div>
                     </article>
 
-                    <article class="card">
+                    <article class="card reveal">
                         <div class="card__image">
-                            <img src="media/fancy.jpg" alt="Сварка">
+                            <img src="media/fancy.jpg" alt="Сварочная мастерская" loading="lazy">
+                            <div class="card__badge">Сварка</div>
                         </div>
                         <div class="card__content">
                             <h3 class="card__title">Сварочная мастерская</h3>
                             <p class="card__desc">Металлические конструкции, мангалы и декор в стиле лофт.</p>
                             <div class="card__contact">
-                                <strong>Контакт:</strong> Волков М.Ю.
+                                <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                Волков М.Ю.
                             </div>
                             <div class="card__actions">
                                 <a href="#" class="btn-outlined" target="_blank">Открыть диск</a>
-
                             </div>
                         </div>
                     </article>
@@ -205,41 +224,37 @@
             </div>
         </section>
 
-<section id="partners" class="partners section-padding">
+        <section id="partners" class="partners section-padding">
             <div class="container">
                 <div class="partners__wrapper">
-                    <div class="partners__block">
-                        <h2 class="section-title">Наши партнёры</h2>
+                    <div class="partners__block reveal">
+                        <h2 class="section-title section-title--left">Наши партнёры</h2>
                         <div class="partners__logos">
-                            <img class="partner-logo" src="media/1925278_rs_248x154.jpg"></img>
-                            <img class="partner-logo" src="media/logo_prof.png"></img>
-                            <img class="partner-logo" src="media/images.png"></img>
+                            <img class="partner-logo" src="media/1925278_rs_248x154.jpg" alt="Партнёр 1">
+                            <img class="partner-logo" src="media/logo_prof.png" alt="Партнёр 2">
+                            <img class="partner-logo" src="media/images.png" alt="Партнёр 3">
                         </div>
                     </div>
 
-                    <div class="socials__block">
-                        <h2 class="section-title">Мы в соцсетях</h2>
-                        
-                        
+                    <div class="socials__block reveal">
+                        <h2 class="section-title section-title--left">Мы в соцсетях</h2>
                         <div class="socials__qr">
-                            <div class="qr-item">
+                            <a class="qr-item" href="https://vk.com/ugktid_professionalitet" target="_blank" rel="noopener">
                                 <img src="media/vk.png" alt="QR код ВКонтакте">
-                                <a class="qr-label" href="https://vk.com/ugktid_professionalitet">VK</a>
-                            </div>
-
-                            <div class="qr-item">
-                                <img src="media/qr-code.png" alt="QR код ВК">
-                                <a class="qr-label" href="https://vk.com/cki_professionalitet">VK ЦПК</a>
-                            </div>
-                            <div class="qr-item">
+                                <span class="qr-label">VK</span>
+                            </a>
+                            <a class="qr-item" href="https://vk.com/cki_professionalitet" target="_blank" rel="noopener">
+                                <img src="media/qr-code.png" alt="QR код ВК ЦПК">
+                                <span class="qr-label">VK ЦПК</span>
+                            </a>
+                            <a class="qr-item" href="https://t.me/ufagktid" target="_blank" rel="noopener">
                                 <img src="media/tg.png" alt="QR код Telegram">
-                                <a class="qr-label" href="https://t.me/ufagktid">Telegram</a>
-                            </div>
-                            <div class="qr-item">
+                                <span class="qr-label">Telegram</span>
+                            </a>
+                            <a class="qr-item" href="https://max.ru/id274030617_gos" target="_blank" rel="noopener">
                                 <img src="media/qr-code(1).png" alt="QR код Max">
-                                <a class="qr-label" href="https://max.ru/id274030617_gos">Max</a>
-                            </div>
-                            </div>
+                                <span class="qr-label">Max</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -250,30 +265,22 @@
     <footer class="footer">
         <div class="container footer__container">
             <div class="footer__info">
-                <p>&copy; 2026 УГКТиД Маркет. Все права защищены.</p>
+                <a href="index.html" class="footer__logo">УГКТиД Маркет</a>
+                <p>&copy; 2025 УГКТиД Маркет. Все права защищены.</p>
             </div>
             <div class="footer__links">
-                <a href="#">Политика конфиденциальности</a>
-                <a href="#">Публичная оферта</a>
+                <a href="about.html#privacyText">Политика конфиденциальности</a>
+                <a href="order.html">Оформить заказ</a>
+                <a href="about.html">О нас</a>
             </div>
         </div>
     </footer>
 
+    <!-- Кнопка наверх -->
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
     <script src="js/main.js"></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
